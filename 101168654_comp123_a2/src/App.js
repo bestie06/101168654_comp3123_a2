@@ -1,9 +1,10 @@
 import React, { cloneElement, Component } from "react";
 import './App.css';
 
-import "weather-icons/css/weather-icons.min.css";
+import "weather-icons/css/weather-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wheather from './app_component/weather.component';
+import Form from'./app_component/form.component';
 
 
 const API_key="69bcf12350649732b62292b9d63ad7da"
@@ -90,6 +91,7 @@ class App extends React.Component{
   render(){
     return(
       <div className="App">
+      <Form/>
       <Wheather city={this.state.city} country={this.state.country} 
       temp_celsius={this.state.celcius} 
       temp_max={this.state.temp_max}
