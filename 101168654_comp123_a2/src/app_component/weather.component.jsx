@@ -14,6 +14,11 @@ const Weather=(props)=>{
                 {props.temp_celsius ?(<h1 className="py-2">{props.temp_celsius}&deg;</h1>):null}
                 {minmaxTemp(props.temp_min,props.temp_max)}
                 <h4 className="py-3">{props.description}</h4>
+                
+            </div>
+            <div>
+                 <p><a href="#" class="text-white bg-dark">Fatih Kucukgokmen</a></p>
+                <p><a href="#" class="text-white bg-dark">101168654</a></p>
             </div>
         </div>
     );
