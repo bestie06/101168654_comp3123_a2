@@ -16,7 +16,7 @@ form input:focus{
     box-shadow: none !important;
 }
 
-form input
+form input:focus
 .container::-webkit-input-placeholder{
-    color:white!important;
+    color: white !important;
 }
