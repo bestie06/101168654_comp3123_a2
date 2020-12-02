@@ -3,8 +3,8 @@ import './App.css';
 
 import "weather-icons/css/weather-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Wheather from './app_component/weather.component';
-import Form from'./app_component/form.component';
+import Wheather from './component/weather.home';
+import Form from'./component/component_form';
 
 
 const API_key="69bcf12350649732b62292b9d63ad7da"
