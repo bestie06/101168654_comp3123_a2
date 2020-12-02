@@ -73,7 +73,7 @@ class App extends React.Component{
   }
 
   getWeather=async(e)=>{
-    e.preventDefault();
+    e.preventDefault(); 
     const city=e.target.elements.city.value;
     const country=e.target.elements.country.value;
     if(city && country){
@@ -81,6 +81,7 @@ class App extends React.Component{
       const response = await api_call.json();
   
       console.log(response);
+      
       this.setState({
         city:`${response.name},${response.sys.country}`,
         country:response.sys.country,
